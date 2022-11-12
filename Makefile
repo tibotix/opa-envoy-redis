@@ -30,3 +30,9 @@ LDFLAGS := "-X github.com/open-policy-agent/opa/version.Version=$(VERSION) \
 
 build:
 	$(GO) build $(GO_TAGS) -o $(BIN) -ldflags $(LDFLAGS) ./main/...
+
+docker-build-static: build
+	docker build -t tibotix/opa:envoy-redis-static --build-arg BASE=gcr.io/distroless/static -f ./Dockerfile .
+
+docker-push-static:
+	docker push tibotix/opa:envoy-redis-static
