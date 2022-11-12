@@ -1,5 +1,5 @@
 VERSION_OPA := $(shell ./scripts/get-opa-version.sh)
-VERSION := $(VERSION_OPA)-redis$(shell ./scripts/get-plugin-rev.sh)
+VERSION := $(VERSION_OPA)-envoy-redis$(shell ./scripts/get-plugin-rev.sh)
 
 CGO_ENABLED ?= 1
 WASM_ENABLED ?= 1
@@ -10,7 +10,7 @@ GOARCH := $(shell go env GOARCH)
 GOOS := $(shell go env GOOS)
 DISABLE_CGO := CGO_ENABLED=0
 
-BIN := opa_redis_envoy_$(GOOS)_$(GOARCH)
+BIN := opa_envoy_redis_$(GOOS)_$(GOARCH)
 
 GO_TAGS := -tags=
 ifeq ($(WASM_ENABLED),1)

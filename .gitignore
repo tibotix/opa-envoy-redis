@@ -14,4 +14,4 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-opa_redis_envoy_*
+opa_envoy_redis_*
