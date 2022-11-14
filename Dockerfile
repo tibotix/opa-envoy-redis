@@ -13,9 +13,9 @@ ARG USER=0
 
 USER ${USER}
 
-WORKDIR /app
+COPY ./opa_envoy_redis_linux_amd64 /app
 
-COPY opa_envoy_redis_linux_amd64 /app
+WORKDIR /app
 
 ENTRYPOINT ["./opa_envoy_redis_linux_amd64"]
 
