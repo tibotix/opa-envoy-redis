@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/open-policy-agent/opa v0.46.1
 	github.com/open-policy-agent/opa-envoy-plugin v0.46.1
-	github.com/tibotix/opa-redis-plugin v0.0.0-20221112150907-147bd6011626
+	github.com/tibotix/opa-redis-plugin v0.1.0
 )
 
 require (

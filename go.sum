@@ -392,6 +392,8 @@ github.com/tchap/go-patricia/v2 v2.3.1 h1:6rQp39lgIYZ+MHmdEq4xzuk1t7OdC35z/xm0BG
 github.com/tchap/go-patricia/v2 v2.3.1/go.mod h1:VZRHKAb53DLaG+nA9EaYYiaEx6YztwDlLElMsnSHD4k=
 github.com/tibotix/opa-redis-plugin v0.0.0-20221112150907-147bd6011626 h1:MNdZLcIuz/DRgZRgwgXcXKqGMB0Q7Qsa7lN2g2UZDY8=
 github.com/tibotix/opa-redis-plugin v0.0.0-20221112150907-147bd6011626/go.mod h1:BlDDfIPKhNwQeKN0xZNG0NqfBdc66kPnnFvf2iSd4YM=
+github.com/tibotix/opa-redis-plugin v0.1.0 h1:EWBCtWMmF7WMc0jGERdFuRDo4leI7TifPa4Pu02gq2g=
+github.com/tibotix/opa-redis-plugin v0.1.0/go.mod h1:BlDDfIPKhNwQeKN0xZNG0NqfBdc66kPnnFvf2iSd4YM=
 github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=
 github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb h1:zGWFAtiMcyryUHoUjUJX0/lt1H2+i2Ka2n+D3DImSNo=
 github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb/go.mod h1:N2zxlSyiKSe5eX1tZViRH5QA0qijqEDrYZiPEAiq3wU=
