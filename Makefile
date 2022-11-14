@@ -34,5 +34,3 @@ build:
 docker-build-static: build
 	docker build -t tibotix/opa:envoy-redis-static --build-arg BASE=gcr.io/distroless/static -f ./Dockerfile .
 
-docker-push-static:
-	docker push tibotix/opa:envoy-redis-static
