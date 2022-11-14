@@ -13,6 +13,7 @@ FROM ${BASE}
 
 # USER ${USER}
 
+WORKDIR /app
 COPY ./opa_envoy_redis_linux_amd64 /app
 
 ENTRYPOINT ["/app/opa_envoy_redis_linux_amd64"]
