@@ -34,7 +34,7 @@ jobs:
       
       - name: Get version tag from opa
         run: |
-          echo "opa_version_tag=${./scripts/get-opa-version.sh}" >> $GITHUB_ENV
+          echo "opa_version_tag=$(./scripts/get-opa-version.sh)" >> $GITHUB_ENV
 
       - name: Echo version tag
         run: |
@@ -59,8 +59,8 @@ jobs:
           cache-to: type=inline
           load: true
           tags: |
-            tibotix/opa:envoy-redis-static-latest
-            tibotix/opa:envoy-redis-static-${{ env.opa_version_tag }}
+            tibotix/opa:latest-envoy-redis-static
+            tibotix/opa:${{ env.opa_version_tag }}-envoy-redis-static
 
       - name: Output local docker images
         run: docker image ls --digests | grep opa
@@ -74,4 +74,4 @@ jobs:
 
       - name: Push client
         if: ${{ !(github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run == 'true') }}
-        run: docker push tibotix/opa:envoy-redis-static-${{ env.opa_version_tag }} && docker push tibotix/opa:envoy-redis-static-latest
+        run: docker push tibotix/opa:${{ env.opa_version_tag }}-envoy-redis-static && docker push tibotix/opa:latest-envoy-redis-static
