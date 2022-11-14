@@ -56,7 +56,7 @@ jobs:
         with:
           file: Dockerfile
           push: false
-          build_args: |
+          build-args: |
             BASE=gcr.io/distroless/static
           cache-from: type=registry,ref=tibotix/opa:envoy-redis-static-latest
           cache-to: type=inline
