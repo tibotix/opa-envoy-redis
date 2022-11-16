@@ -417,7 +417,7 @@ github.com/spf13/pflag
 # github.com/tchap/go-patricia/v2 v2.3.1
 ## explicit; go 1.16
 github.com/tchap/go-patricia/v2/patricia
-# github.com/tibotix/opa-redis-plugin v0.1.0
+# github.com/tibotix/opa-redis-plugin v0.2.0
 ## explicit; go 1.19
 github.com/tibotix/opa-redis-plugin/internal
 github.com/tibotix/opa-redis-plugin/plugin
