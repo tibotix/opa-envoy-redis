@@ -75,7 +75,7 @@ jobs:
 
   docker_build_and_publish_opal_client:
     runs-on: ubuntu-latest
-    # needs: docker_build_and_publish_opa
+    needs: docker_build_and_publish_opa
     steps:
       - name: Checkout OPAL
         uses: actions/checkout@v3
