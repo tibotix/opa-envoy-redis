@@ -55,7 +55,7 @@ jobs:
           push: false
           build-args: |
             BASE=gcr.io/distroless/static
-          cache-from: type=registry,ref=tibotix/opa:envoy-redis-static-latest
+          cache-from: type=registry,ref=tibotix/opa:latest-envoy-redis-static
           cache-to: type=inline
           load: true
           tags: |
