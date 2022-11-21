@@ -94,13 +94,11 @@ jobs:
         run: |
           echo "The version tag that will be published to docker hub is: ${{ env.opal_version_tag }}"
       
-      - name: List Sources
-        run: pwd && ls && ls docker
-      
       - name: Build opal-client image
         id: build_image
         uses: docker/build-push-action@v2
         with:
+          context: .
           file: docker/Dockerfile
           push: false
           target: client
